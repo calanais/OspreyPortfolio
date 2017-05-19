@@ -1,0 +1,20 @@
+{
+  "name": "osprey-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "handlebars": "^4.0.8",
+    "isotope-layout": "^3.0.4",
+    "jquery": "^3.2.1",
+    "lightbox2": "^2.9.0",
+    "macy": "^2.0.0",
+    "tent-css": "^1.4.2"
+  }
+}

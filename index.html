@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="x-ua-compatible" content="ie=edge">
+   <title>BWPS Junior Competition 2017</title>
+   <meta name="description" content="Osprey Voting"/>
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<script src="https://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+<script src="https://npmcdn.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
+
+   <link href="./node_modules/tent-css/dist/tent.min.css" rel="stylesheet"/>
+   <link href="./node_modules/lightbox2/dist/css/lightbox.css" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700%7CRoboto:400,700,700italic,400italic" rel="stylesheet" type="text/css">
+   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+
+
+<style>
+
+* { box-sizing: border-box; }
+
+/* force scrollbar, prevents initial gap */
+html {
+  overflow-y: scroll;
+}
+
+
+/* ---- grid ---- */
+
+.i-grid {
+  background: #DDD;
+}
+
+/* clear fix */
+.i-grid:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+/* ---- .grid-item ---- */
+
+.i-grid-sizer,
+.i-grid-item {
+  width: 33.333%;
+}
+
+.i-grid-item {
+  float: left;
+}
+
+.i-grid-item img {
+  display: block;
+  max-width: 100%;
+}
+
+</style>
+
+</head>
+
+<body>
+   <header class="masthead bg-color-primary inverse padding-y padding-xs">
+       <div class="container">
+           <div class="grid grid--center">
+               <div class="grid__column">
+                   <h1 class="title title--xl">BWPS Junior Competition 2017</h1>
+
+               </div>
+           </div>
+       </div>
+   </header>
+
+
+
+<main class="mastcontent">
+    <section class="intro-copy padding-y padding-lg">
+        <div class="container">
+
+            <div class="grid">
+            <!--    <div class="grid__column grid__column--12 grid__column--12--md ">
+                   <div class="i-grid">
+                     <div class="i-grid-item"><a href="MistyDawn.jpg" data-lightbox="PrimaryAge" data-title="A Cold Winters Morning"> <img src="MistyDawn.jpg"/></a></div>
+                     <div class="i-grid-item i-grid-item--width2">
+                        <a href="Sunrise.jpg" data-lightbox="PrimaryAge" data-title="Sunrise">
+                           <img src="Sunrise.jpg"/>
+                        </a>
+                     </div>
+                     <div class="i-grid-item"><img src="PreshawDown.jpg"/></div>
+                     <div class="i-grid-item .i-grid-item--height2"><img src="GowerRainbow.jpg"/></div>
+                     <div class="i-grid-item .i-grid-item--height2"><img src="CalifornianPoppies.jpg"/></div>
+                     <div class="i-grid-item"><img src="Loch Carron Church.jpg"/></div>
+                   </div>
+                </div>-->
+
+
+
+                <div class="grid__column grid__column--12 grid__column--12--md">
+                   <h1>Isotope - masonry fluid sizing</h1>
+
+                   <div class="i-grid">
+                  <div class="i-grid-sizer"></div>
+                  <div class="i-grid-item">
+                    <img src="MistyDawn.jpg" />
+                  </div>
+                  <div class="i-grid-item">
+                    <img src="PreshawDown.jpg" />
+                  </div>
+                  <div class="i-grid-item">
+                    <img src="CalifornianPoppies.jpg" />
+                  </div>
+                  <div class="i-grid-item">
+                    <img src="GowerRainbow.jpg" />
+                  </div>
+                  <div class="i-grid-item">
+                    <img src="Loch Carron Church.jpg" />
+                  </div>
+                  <div class="i-grid-item">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/cat-nose.jpg" />
+                  </div>
+                  <div class="i-grid-item">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/contrail.jpg" />
+                  </div>
+                  <div class="i-grid-item">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/golden-hour.jpg" />
+                  </div>
+                  <div class="i-grid-item">
+                    <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/82/flight-formation.jpg" />
+                  </div>
+                </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+</main>
+
+
+<script src="./node_modules/lightbox2/dist/js/lightbox.min.js"></script>
+</body>
+
+<script>
+
+$(document).ready(function(){
+
+   var $grid = $('.i-grid').imagesLoaded( function() {
+     $grid.isotope({
+       itemSelector: '.i-grid-item',
+       percentPosition: true,
+       masonry: {
+         columnWidth: '.i-grid-sizer'
+       }
+     });
+   });
+
+
+});
+
+
+// var elem = document.querySelector('.i-grid');
+// var iso = new Isotope( elem, {
+//   // options
+//   itemSelector: '.i-grid-item',
+//   layoutMode: 'fitRows'
+// });
+//
+// // element argument can be a selector string
+// //   for an individual element
+// var iso = new Isotope( '.i-grid', {
+//   // options
+// });
+
+
+</script>
+
+
+</html>

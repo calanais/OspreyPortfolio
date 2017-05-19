@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>BWPS Junior Competition 2017</title>
+    <meta name="description" content="Osprey Voting" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+    <link href="./node_modules/tent-css/dist/tent.min.css" rel="stylesheet" />
+    <link href="./node_modules/lightbox2/dist/css/lightbox.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700%7CRoboto:400,700,700italic,400italic" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet">
+
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        /* force scrollbar, prevents initial gap */
+
+        html {
+            overflow-y: scroll;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="masthead bg-color-primary inverse padding-y padding-xs">
+        <div class="container">
+            <div class="grid grid--center">
+                <div class="grid__column">
+                    <h1 class="title title--xl">BWPS Junior Competition 2017</h1>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    <main class="mastcontent">
+        <section class="intro-copy padding-y padding-lg">
+            <div class="container">
+                <div class="grid">
+                    <div class="grid__column grid__column--12 grid__column--12--md">
+                        <h1>Title</h1>
+
+                        <div class="i-grid" id="macy-container">
+
+                            <div class="i-grid-item">
+                                <a href="MistyDawn.jpg" data-lightbox="PrimaryAge" data-title="A Cold Winters Morning"> <img src="MistyDawn.jpg" /></a>
+                            </div>
+                            <div class="i-grid-item">
+                                <a href="PreshawDown.jpg" data-lightbox="PrimaryAge" data-title="A Cold Winters Morning">
+                                    <img src="PreshawDown.jpg" />
+                                </a>
+                            </div>
+                            <div class="i-grid-item">
+                                <a href="CalifornianPoppies.jpg" data-lightbox="PrimaryAge" data-title="A Cold Winters Morning">
+                                    <img src="CalifornianPoppies.jpg" />
+                                </a>
+                            </div>
+                            <div class="i-grid-item">
+                                <a href="GowerRainbow.jpg" data-lightbox="PrimaryAge" data-title="A Cold Winters Morning">
+                                    <img src="GowerRainbow.jpg" />
+                                </a>
+                            </div>
+                            <div class="i-grid-item">
+                                <a href="Loch Carron Church.jpg" data-lightbox="PrimaryAge" data-title="A Cold Winters Morning">
+                                    <img src="Loch Carron Church.jpg" />
+                                </a>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="./node_modules/lightbox2/dist/js/lightbox.min.js"></script>
+</body>
+<script src="./node_modules/macy/dist/macy.js"></script>
+<script>
+    $(document).ready(function() {
+        var macy = Macy({
+            container: '#macy-container',
+            trueOrder: false,
+            waitForImages: false,
+            margin: 24,
+            breakAt: {
+                1200: 5,
+                940: 3,
+                520: 2,
+                400: 1
+            }
+        });
+
+
+    });
+</script>
+
+
+</html>
